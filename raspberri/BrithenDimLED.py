@@ -6,7 +6,7 @@ GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(19, GPIO.OUT)
 
-p = GPIO.PWM(12,50) # channel=12 frequency=50Hz
+p = GPIO.PWM(19,50) # channel=12 frequency=50Hz
 p.start(0)
 
 try:
