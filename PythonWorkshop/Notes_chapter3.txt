@@ -1,0 +1,8 @@
+Numbers :
+-> The interpreter acts as a simple calculator.
+-> The integer numbers (e.g. 2, 4, 20) have type int
+-> The ones with a fractional part (e.g. 5.0, 1.6) have type float
+-> Division (/) always returns a float
+-> To do floor division and get an integer result (discarding any fractional result) you can use the // operator
+->  To calculate the remainder you can use %
+
