@@ -1,0 +1,5 @@
+Interactive mode :
+bash> python3.6
+
+Argument Passing :
+bash> python /home/anveshan/Desktop/PythonWorkshop/Chapter_3_1_1.py
