@@ -1,0 +1,57 @@
+Python is strong,dynamically typed language.
+
+----
+A language is statically typed if the type of a variable is known at compile time. For some languages this means that you as the programmer must specify what type each variable is (e.g.: Java, C, C++)
+----
+
+----
+A language is dynamically typed if the type is associated with run-time values, and not named variables/fields/etc. This means that you as a programmer can write a little quicker because you do not have to specify types every time (unless using a statically-typed language with type inference). Example: Perl, Ruby, Python
+----
+
+
+
+----
+In general, a strongly typed language is more likely to generate an error or refuse to compile if the argument passed to a function does not closely match the expected type.
+----
+
+
+
+----
+A weakly typed language may produce unpredictable results or may perform implicit type conversion when the argument passed to a function does not closely match the expected type.
+----
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+>>> year = 2017
+>>> type(year)
+<class 'int'>
+>>> dec = 1.1
+>>> type(dec)
+<class 'float'>
+>>> hello = 'Hello World'
+>>> type(hello)
+<class 'str'>
+>>> alphabet = ['a','b','c']
+>>> type(alphabet)
+<class 'list'>
+>>>
+-------- As you can see, I didn’t have to tell Python what ‘type’ each variable value was, it assigned the types dynamically. This is in contract to Statically Typed languages whereby you need to specify the type of the variable.
+
+
+>>> password = 1234
+>>> encrypt = 'encrypt'
+>>> type(password)
+<class 'int'>
+>>> type(encrypt)
+<class 'str'>
+>>> result = password + encrypt
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+>>> 
+-------- As we can see, the password and encryption variables are int  and str  ‘types’ respectively. This is going to be a problem because in order to concatenate variables, they need to be the same ‘type’.
+
+>>> result = str(password) + encrypt
+>>> print(result)
+1234encrypt
+>>> 
+
+
