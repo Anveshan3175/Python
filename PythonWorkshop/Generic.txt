@@ -1,1 +1,10 @@
-
+1. To simply put it, namespace is a collection of names.
+2. 
+>>> x = 2
+>>> y = 2
+>>> id(x)
+140306887403808
+>>> id(y)
+140306887403808
+>>> id(2)
+140306887403808
