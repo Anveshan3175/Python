@@ -1,7 +1,17 @@
 1. To simply put it, namespace is a collection of names.
 Each module creates its own global namespace.These different namespaces are isolated. Hence, the same name that may exist in different modules do not collide
-
 When a reference is made inside a function, the name is searched in the local namespace, then in the global namespace and finally in the built-in namespace.
+*************
+def outer_function():
+    b = 20
+    def inner_func():
+        c = 30
+
+a = 10
+*************
+a is in the global namespace
+b is in the local namespace of outer_function()
+c is in the nested local namespace of inner_function()
 -----------
 2. 
 >>> x = 2
