@@ -1,4 +1,5 @@
 1. To simply put it, namespace is a collection of names.
+Each module creates its own global namespace.These different namespaces are isolated. Hence, the same name that may exist in different modules do not collide
 -----------
 2. 
 >>> x = 2
