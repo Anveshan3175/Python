@@ -24,6 +24,18 @@ Print outer :  Hi Inner
 
 The only difference in the output of second program is attributed to "nonlocal" modifier. Because of this modifier, no new variable "value" is created and it points to "value" declared in the outer method.
 
+''' If there is no nolocal, then you will get runtime exception'''
+>>> def testScope():
+...     def innerScope():
+...         nonlocal value
+...         value = 'Hi Inner'
+...     innerScope()
+...     print("Print outer : ",value)
+... 
+  File "<stdin>", line 3
+SyntaxError: no binding for nonlocal 'value' found
+
+
 
 
 >>> def testScope():
