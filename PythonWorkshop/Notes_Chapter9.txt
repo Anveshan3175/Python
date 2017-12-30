@@ -1,1 +1,13 @@
 
+Scopes :
+
+def testScope():
+...     def innerScope():
+...         value = 'Hi Inner'
+...     value = "Hi Outer"
+...     innerScope()
+...     print("Print outer : ",value)
+... 
+>>> testScope()
+Print outer :  Hi Outer   // why ? -> "value" is assigned "Hi Outer" and local methhod is called. Now local method will create new local-scoped variable "value" and assigns a value. This variable , however disappears once method execution completes. So "value" still holds "Hi Outer" and it is printed.
+
