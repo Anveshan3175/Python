@@ -67,20 +67,20 @@ addNums(*v)
 --------------------------------------------
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+>>> def testvarArgs(**args):
+...     for key in args:
+...         print(args[key])
+...
+testvarArgs(a = 'apple')
+apple
+testvarArgs(a = 'apple',b = 'ball')
+apple
+ball
+dict = {'a':'Apps','b':'Baps'}
+testvarArgs(**dict)
+Apps
+Baps
+--------------------------------------------
 
 
 
