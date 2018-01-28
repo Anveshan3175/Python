@@ -93,8 +93,36 @@ list
 >>> list
 [90, 67, 45, 37, 34, 12]
 --------------------------------------------
-
-
-
+List/Stack
+>>> list = [1,2,3]
+>>> type(list)
+<class 'list'>
+>>> set = {1,2,3,2}
+>>> type(set)
+<class 'set'>
+>>> set
+{1, 2, 3}
+>>> tuple = (1,2,3,2)
+>>> type(tuple)
+<class 'tuple'>
+>>> tuple
+(1, 2, 3, 2)
+>>> range = range(1,4)
+>>> type(range)
+<class 'range'>
+>>> range
+range(1, 4)
+>>> dict = {1:'one',2:'two',3:'three'}
+>>> type(dict)
+<class 'dict'>
+>>> dict
+{1: 'one', 2: 'two', 3: 'three'}
+>>> from collections import deque
+>>> queue = deque([1,2,3,1])
+>>> type(queue)
+<class 'collections.deque'>
+>>> queue
+deque([1, 2, 3, 1])
+--------------------------------------------
 
 
