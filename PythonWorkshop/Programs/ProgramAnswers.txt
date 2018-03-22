@@ -8,7 +8,7 @@ between 2000 and 3200 (both included).
 The numbers obtained should be printed in a comma-separated sequence on a single line.
 
 My Answer :
-nums = range(2000,3200)
+nums = range(2000,3201)
 selected = lambda x:x if(x % 7 == 0 and x % 5 != 0) else None
 filterList = list(filter(selected,nums))
 print(filterList)
