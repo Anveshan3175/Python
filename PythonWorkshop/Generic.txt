@@ -42,3 +42,6 @@ Inside!
 
 Now, by adding nonlocal msg to the top of inside, Python knows that when it sees an assignment to msg, it should assign to the variable from the outer scope instead of declaring a new variable that shadows its name.
 ------------
+Install packages in python
+pIIP : "preferred installer program"
+pip is a package management system used to install and manage software packages written in Python.
