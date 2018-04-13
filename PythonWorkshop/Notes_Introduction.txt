@@ -2,7 +2,7 @@ Why is programming useful to you ?
 Fundamentally, you live in a world surrounded by data.So we need to collect that data, manipulate it and analyse it in a way useful to us. So programming is great.
 
 Why Python ?
-1. Python is very versatile language.We can use python to do almost anything like
+1. What do you want to do programming for ? Some people like to build games because they are fun, someone like to build websites, someone like to analyse data etc. So with python you can do almost anything you are interested in . Python is very versatile language.We can use python to do almost anything like
 -> Analyse data
 -> Build websites
 -> You can maintain servers
