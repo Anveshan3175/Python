@@ -12,10 +12,10 @@ Why Python ?
 
 2. Python is very much like English. It has low syntatic overhead.We can get useful work done very quickly in python. Many education instituitions switched to Python like MIT.
 
-3. Python can be used to build beautiful websites. Django is the web framework.For ex: Instagram,firefox website,pinterest are all build using django
+3. Python can be used to build beautiful websites. Django is the web framework.For ex:http://greatandhra.com/ Instagram,firefox website,pinterest are all build using django
 
 4. Python is used in data analysis and graphing visulaizations. There is popular library  called "matpotlib".It uses set of python tools. All kinds of graphs can be drawn- pi charts,3d charts. You can even make movies in matpotlib. We can build physics simulations. The molecule visualization tools like primo uses python.
 
-5. We can build games using python. THere is module called pygames. Pygame is a cross-platform set of Python modules designed for writing video games. It includes computer graphics and sound libraries designed to be used with the Python programming language.
+5. We can build games using python. THere is popular library called pygames. Pygame is a cross-platform set of Python modules designed for writing video games. It includes computer graphics and sound libraries designed to be used with the Python programming language.
 
-6. Python can be used for analysing music.Echonest library . For ex, Using python , we can cut music into snippets for analysis. So you can make music or manipulate music using python
+6. For musicians we have echonest api. Python can be used for analysing music.Echonest library . For ex,we can cut music into snippets for analysis and manipulate snippets using echonest library. So you can make music or manipulate music using python.
