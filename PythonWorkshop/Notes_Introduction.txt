@@ -21,10 +21,12 @@ Why Python ?
 6. For musicians we have echonest api. It is used to make and manipulate music. For ex,we can cut music into snippets for analysis and manipulate snippets using echonest API.
 
 7. Python is simple and small learning curve
-
 ---------
 1. Python can be used as normal calculator.
  -> If the operands are not decimals, then result will not be decimals.
     For ex: 5/2 = 2
             5.0/2 = 2.5  (Atleast one of the numbers is decimal)
     So we have 2 types of numbers - integers (no demical places) and floats (has decimal floats)
+    
+    
+   
