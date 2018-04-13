@@ -19,3 +19,10 @@ Why Python ?
 5. We can build games using python. THere is popular library called pygames. Pygame is a cross-platform set of Python modules designed for writing video games. It includes computer graphics and sound libraries designed to be used with the Python programming language.
 
 6. For musicians we have echonest api. It is used to make and manipulate music. For ex,we can cut music into snippets for analysis and manipulate snippets using echonest API.
+
+---------
+1. Python can be used as normal calculator.
+ -> If the operands are not decimals, then result will not be decimals.
+    For ex: 5/2 = 2
+            5.0/2 = 2.5  (Atleast one of the numbers is decimal)
+    So we have 2 types of numbers - integers (no demical places) and floats (has decimal floats)
