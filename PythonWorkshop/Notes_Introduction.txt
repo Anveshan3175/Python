@@ -23,10 +23,11 @@ Why Python ?
 7. Python is simple and small learning curve
 ---------
 1. Python can be used as normal calculator.
- -> If the operands are not decimals, then result will not be decimals.
+ -> If the operands are not decimals, then result will not be decimals. This is in python2.
     For ex: 5/2 = 2
             5.0/2 = 2.5  (Atleast one of the numbers is decimal)
     So we have 2 types of numbers - integers (no demical places) and floats (has decimal floats)
+ -> In python3, 5/2 = 2.5
     
     
    
