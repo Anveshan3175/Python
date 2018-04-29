@@ -8,16 +8,16 @@ A language is statically typed if the type of a variable is known at compile tim
 A language is dynamically typed if the type is associated with run-time values, and not named variables/fields/etc. This means that you as a programmer can write a little quicker because you do not have to specify types every time (unless using a statically-typed language with type inference). Example: Perl, Ruby, Python
 ----
 
-
-
 ----
 In general, a strongly typed language is more likely to generate an error or refuse to compile if the argument passed to a function does not closely match the expected type.
+
+"ABC" + 5  => Gives error in strongly typed
 ----
-
-
 
 ----
 A weakly typed language may produce unpredictable results or may perform implicit type conversion when the argument passed to a function does not closely match the expected type.
+
+"ABC" + 5 => ABC5
 ----
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 >>> year = 2017
