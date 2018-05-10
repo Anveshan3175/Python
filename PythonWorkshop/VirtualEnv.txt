@@ -12,3 +12,9 @@ Application A can have its own virtual environment with version 1.0 installed
 Application B has another virtualenv with version 2.0 installed
 
 At later point of time, Application B can be upgraded to version 3.0 and it will not impact Application A in any way
+
+
+Installation
+------------
+You can install by 
+sudo apt install python3-venv
