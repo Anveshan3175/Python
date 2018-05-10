@@ -1,1 +1,14 @@
-test
+Why Virtual Env concept came into existence ?
+---------------------------------------------
+Application A needs =====>  version 1.0 of a particular python module   (these are not standard python libraries)
+Application B needs =====>  version 2.0 of a particular python module
+  So the requirements are in conflict and installing either version 1.0 or 2.0 will leave one application unable to run
+  
+What can be done ?
+Create a virtual environment (often shortened to “virtualenv”), a self-contained directory tree that contains a Python installation for a particular version of Python, plus a number of additional packages.
+
+So,
+Application A can have its own virtual environment with version 1.0 installed 
+Application B has another virtualenv with version 2.0 installed
+
+At later point of time, Application B can be upgraded to version 3.0 and it will not impact Application A in any way
