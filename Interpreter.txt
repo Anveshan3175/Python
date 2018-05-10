@@ -1,0 +1,111 @@
+-----------------In Linux---------------------
+- Python interpreter is usually installed as /usr/local/bin/python
+- Invoke interpreter
+
+python
+
+- Exit from interpreter
+
+>>> Control-D 
+>>> quit()
+
+----------------In Windows--------------------
+- The Python installation is usually placed in  C:\Python36   (for version 3.6)
+- Invoke interpreter 
+
+set path=%path%;C:\python36
+python
+
+- Exit from interpreter
+Control-Z
+
+-> If there are 2 installations of python, you canvoke respective versions by typing version number
+
+python2
+python3
+
+---------------- Line-editing Features of Interpreter----------
+- include interactive editing 
+- history substitution
+- code completion
+
+To check if Line-editing features are there or not 
+>>> Control + p
+<print(greeting)>
+
+
+---------------- Python invocations ---------------
+- Python shell operates like unix shell -> It reads and executes commands interactively -> When called with file name, it execute the script in the file
+- To execute script in python file
+
+python <filename>
+python /home/java9/python/myScript.py
+
+- All python file will have ".py" extension
+- To execute the other commands without opening shell
+
+python -c '<command>'
+pythong -c 'print( 3 + 4)
+
+
+---------------- Argument Passing ------------------
+- To execute modules which needs argument , then you can add arguments following the module name
+
+python <filename> <args>
+python /home/java9/python/greeting.py Anveshan
+
+- Arguments are turned into a list of strings and assigned to the argv variable in the sys module
+- You need to import sys module
+
+import sys
+
+- The argumets are captured  after sys.argv[1].
+- sys.argv[0] is set to '-c' -> when -c is used  etc
+- sys.argv[0] can store filenames
+
+----------------- Interactive mode -----------------
+- When you start interpreter,  
+  - The interpreter prints a welcome message stating its version number and a copyright notice
+  - primary prompt >>> is displayed   .. You can give your commands at primary prompt
+  - Secondary prompt ... is displayed when continuation is needed in next lines.
+    For example in case of  if stament, then you will have to go multi line.
+
+>>> the_world_is_flat = True
+>>> if the_world_is_flat:
+...     print("Be careful not to fall off!")
+...
+Be careful not to fall off!
+
+
+------------- Encoding ------------------------------
+- A computer cannot store "letters", "numbers", "pictures" or anything else. The only thing it can store and work with are bits. A bit can only have two values: yes or no, true or false, 1 or 0 or whatever else you want to call these two values. Since a computer works with electricity, an "actual" bit is a blip of electricity that either is or isn't there. For humans, this is usually represented using 1 and 0
+
+- So every character has representation of sequence of bits. This represenation is called encoding. One common example is ASCII.
+For ex: in ASCII
+
+- Encoding  -> In this(ASCII) encoding, 01100010 stands for the letter "b"
+  Transalation of sequence of bits into a character from defined character set.
+
+-  While we view text documents as lines of text, computers actually see them as binary data, or a series of ones and zeros. Therefore, the characters within a text document must be represented by numeric codes. In order to accomplish this, the text is saved using one of several types of character encoding.
+
+- The most popular types of character encoding are ASCII and Unicode.While ASCII is still supported by nearly all text editors, Unicode is more commonly used because it supports a larger character set. Unicode is often defined as UTF-8, UTF-16, or UTF-32, which refer to different Unicode standards. UTF stands for "Unicode Transformation Format" and the number indicates the number of bits used to represent each character. From the early days of computing, characters have been represented by at least one byte (8 bits), which is why the different Unicode standards save characters in multiples of 8 bits.
+
+- Characters that are needed for a specific purpose are grouped into a character set (also called a repertoire)
+- To refer to characters in an unambiguous way, each character is associated with a number, called a code point
+- The characters are stored in the computer as one or more bytes
+- A character encoding provides a key to unlock (ie. crack) the code. It is a set of mappings between the bytes in the computer and the characters in the character set. Without the key, the data looks like garbage.
+
+
+------------ Source Code Encoding ------------------
+- By default, Python source files are treated as encoded in UTF-8.
+- In that encoding, characters of most languages in the world can be used simultaneously in string literals, identifiers and comments
+  - Literals can be defined as a data that is given in a variable or constant
+  - A Python identifier is a name used to identify a variable, function, class, module or other object
+- THE STANDARD LIBRARY only uses ASCII characters for identifiers, a convention that any portable code should follow
+-  To display all these characters properly, your editor must recognize that the file is UTF-8, and it must use a font that supports all the characters in the file.
+
+- To use a different encoding, yu need to declare at the top of the source file.
+# -*- coding: encoding -*-
+
+- For example, to declare that Windows-1252 encoding is to be used, the first line of your source code file should be:
+# -*- coding: cp-1252 -*-

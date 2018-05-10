@@ -1,0 +1,20 @@
+-> The python is lanaguage implementation specification reference. It is ike interface. There can be many implementations.
+-> The most common implementation is CPython. It is what we use normally and widely distributed.
+-> SO PYTHON ITSELF CAN'T BE ASSOCIATED TO WHETHER IT IS COMPILED OR INTERPRETED. IT IS JUST A SPECIFICATION. WE NEED TO CHECK THE REFERENCE IMPLEMENTATION TO SEE IF IT IS COMPILED OR INTERPRETED. So, it means we need to ask if Cpython ,Jpython or Ironpython is compiled or interpreted not the if python is compiled or interpreted.
+-> The reference page for python specification says what and how Python should behave
+
+
+--------- How python gets executed ------------------
+- The python code you write is compiled into python bytecode, which creates file with extension .pyc . If compiled, why is not compiled ?
+
+- Note that this isn't compilation in the traditional sense of the word. Typically, we’d say that compilation is taking a high-level language and converting it to machine code. But it is a compilation of sorts. Compiled in to intermediate code not into machine code.
+
+
+- The bytecode, present in pyc file, created in compilation step, is then executed by appropriate virtual machines, in our case, the CPython VM.
+
+
+
+python code   ---> Compiler  --->  .pyc  file    ----> Interpreter    -----> output
+
+
+- So for Cpython, we can say it is interpreted.
