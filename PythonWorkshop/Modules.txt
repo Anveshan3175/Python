@@ -1,0 +1,76 @@
+- When you are building a project or writing longer program, you write programs in a text file and run it. This is called scripting.
+- As your program gets longer, you may split  it into several files for easier maintenance.
+- Its like you can put all definitions used commonly in a file and call them from wherever you need it. This file is called MODULE.
+
+- So a python file is called a module.A MODULE IS A FILE CONTAINING PYTHON DEFINITIONS AND STATEMENTS
+  - The file name is the module name with the suffix .py appended. 
+
+- Definitions from one module can be IMPORTED to another module.
+
+----------------- Simple Module creation and executing it ----------------
+- create a file in /home/java9/python/fibo.py and write fibonacci definition in it.
+- Navigate to /home/java9/python/
+- start python shell 
+
+python
+>>> import fibo    #(You are already in the directory)
+>>> fibo.fib(10)
+1 1 2 3 5 8
+>>> fibo.__name__
+'fibo'
+
+
+----------------- Simple Module creation and executing it ----------------
+- create a file in /home/java9/python/fibo.py and write fibonacci definition in it.
+- Navigate to /home/java9/
+- start python shell 
+
+python
+>>> import python.fibo    #(You are outside of  python directory.So python here is in package)
+>>> python.fibo.fib(10)
+1 1 2 3 5 8
+>>> python.fibo.__name___
+'python.fibo'
+
+
+-> Instead of writing fibo.fib() everytime, you can assign a local name for fib function and use it.
+
+>>> locfib = fibo.fib
+>>> fib(20)
+
+-> Otherwise import specific attributes from the module. For example, if we want to import only fib() from fibo.py
+
+
+>>> from fibo import fib  # Only fib method is imported not the other methods
+>>> fib(10)  
+
+
+-------------------- Executable statements are executed only once -------------
+- If there are any executable statements in the module, like print, then they are executed only once they are imported. If you import second time, it is not executed.
+
+>>> import arithmatic
+This is arithmatic module
+>>> import arithmatic
+
+
+- Initialize variable num = 10 in a module. import module. print num, it will be 10. now increment num and print num. It will be 11. Now import module again and print num.
+It will still be 11 instead of 10 since the assignent statement is not executed second time.
+
+>>> import arithmatic
+>>> xx = arithmatic.globalx
+>>> print(xx)
+10
+>>> arithmatic.globalx = arithmatic.globalx + 1
+>>> print(arithmatic.globalx)
+11
+>>> import arithmatic
+>>> print(arithmatic.globalx)  # xx is not initialized to 
+11
+
+
+-> So when you have executable statements in a module, they get executed when you do import on module or run the module as script
+
+
+
+--> __init__.py is needed in pyton 2 versions to be able to recognize sub modules to importing them 
+https://stackoverflow.com/questions/37139786/is-init-py-not-required-for-packages-in-python-3?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
