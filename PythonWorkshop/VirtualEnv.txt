@@ -18,3 +18,24 @@ Installation
 ------------
 You can install by 
 sudo apt install python3-venv
+
+Using pip and this is recommended
+> sudo pip3 install virtualenv
+
+> virtualenv testenv                    -- python2
+> python3 -m virtualenv env             -- python3
+> cd env                                -- Go to that directory
+> source bin/activate                   -- Activate the virtual env
+> pip freeze                            -- Lists the modules installed in the virtual env
+> pip install numpy                     -- Intall Numpy
+> import numpy as npy
+> a = npy.zeros((2,2)) 
+> print(a)
+> deactivate                            -- Deactivate the virtual env 
+> cd ..                                 -- come out of the directory
+> rm -r env                             -- remove the virtual env after deactivating it
+
+++ deactivte the virtual env
+(ENV)$ deactivate
+$ rm -r /path/to/ENV
+
