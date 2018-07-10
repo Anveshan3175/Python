@@ -1,0 +1,23 @@
+mysql shell
+/usr/bin/mysql -u root -p
+anvesh
+
+sudo apt install python-pip
+pip install pymysql
+sudo apt-get install python3-pymysql
+try :
+conn = pymysql.connect(user="root",passwd="anvesh",host="localhost",port=3306,database="cts")
+>>> cur = conn.cursor()
+>>> cur.execute("select * from tb_skills")
+6
+>>> for row in cur:
+...     print(row[0])
+... 
+except:
+    print(,,,,,,)
+1
+2
+3
+4
+5
+6
